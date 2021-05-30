@@ -1,0 +1,337 @@
+/* 这是main模块的css */
+
+.main{
+    width: 980px;
+    height: 457px;
+    margin-left: 219px;
+    margin-top: 12px;
+}
+
+.focus{
+    position: relative;
+    width: 721px;
+    height: 457px;
+}
+/* focus 左右按钮 */
+.arrow_l,
+.arrow_r{
+    position: absolute;
+    /*垂直居中*/
+    top: 50%; 
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0,0, 0, 0.3);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'icomoon';
+    color: #fff;
+}
+
+.arrow_r{
+    right: 0;
+}
+
+/* 左浮动 newflash开始 */
+.newflash{
+    width: 251px;
+    height: 442px;
+    /* margin-top: 13px; */
+}
+.news{
+    height: 164px;
+    border: 1px solid #e8e8e7;
+}
+
+.news_hd{
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-bottom: 1px dotted #e8e8e7;
+}
+
+.news_hd a{
+    float: right;
+    font-size: 12px;
+    font-family: 'icomoon';
+}
+
+.news_bd{
+    padding: 12px 0 0 7px;
+}
+.news_bd li{
+    height: 22px;
+}
+
+.news_bd a{
+    font-size: 10px;
+}
+
+/* lifeservisce盒子开始 */
+.lifeservice{
+    height: 209px;
+    /* 隐藏超出盒子的浮动元素 */
+    overflow: hidden;
+    border: 1px solid #e8e8e7;
+    border-top: none;
+}
+/* 每行要排4个li 超出了父元素lifeservice盒子大小范围 要放下4个盒子可以增加ul盒子宽度 然后隐藏多余的部分 */
+.lifeservice ul{
+    width: 260px;
+
+}
+.lifeservice li{
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e8e8e7;
+    border-bottom: 1px solid #e8e8e7;
+}
+/* 封装样式 */
+.service_icom{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../img/icons.png) no-repeat ;
+    margin: 10px auto;
+}
+/* 图标列表 */
+.service_huafei{
+    background-position: -18px -16px;
+}
+
+/* 飞机图标 */
+.service_feiji{
+    width: 26px;
+    height: 26px;
+    background-position: -78px -15px;
+}
+/* jian图标 */
+.hot{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../img/jian_03.jpg);
+}
+/* 电影图标 */
+.service_dianying{
+    background-position: -139px -15px;
+}
+
+.service_youxi{
+    background-position: -206px -15px;
+}
+
+.service_cai{
+    background-position: -15px -87px ;
+}
+.service_ka{
+    background-position: -78px -87px ;
+}
+.service_jiudian{
+    background-position: -139px -87px ;
+
+}
+.service_huoche{
+    background-position: -205px -87px ;
+
+}
+.service_zhong{
+    background-position: -16px -158px ;
+
+}
+.service_licai{
+    background-position: -79px -158px ;
+
+
+}
+.service_lipin{
+    background-position: -140px -158px ;
+
+
+}
+.service_baitiao{
+    background-position: -204px -158px;
+
+
+}
+/* 图标列表结束 */
+.lifeservice li a {
+    display: block;
+    /* 解决i引起的外边距塌陷合并问题 */
+    overflow: hidden;
+    height: 100%;
+}
+
+.lifeservice li p {
+    text-align: center;
+  
+}
+
+/* bargain盒子开始  */
+.bargain{
+    height: 80px;
+    /* margin-top: 5px; */
+    border:  1px solid #e8e8e7;
+}
+
+/* recommend 模块开始 */
+.recommend{
+    height: 166px;
+    margin-top: 7px;
+    background-color: aqua;
+}
+.recom_hd{
+    width: 200px;
+    height: 166px;
+    background-color: #5c5251;
+}
+.recom_hd h3{
+    font-size: 18px;
+    color: #fff;
+    /* 去掉H3默认加粗 */
+    font-weight: normal;
+}
+.recom_hd img {
+    /* margin-left: 72px;
+    margin-top: 31px;
+    margin-bottom: 10px;  */
+    margin: 31px 72px 10px;  /*s\上 左右 下*/
+}
+.recom_hd a{
+    text-align: center;
+}
+
+/* 右浮动模块 recom_bd */
+.recom_bd{
+    width: 1000px;
+    height:166px;
+    background-color: #ebebeb;
+}
+
+.recom_bd li{
+    float: left;
+    width: 249px;
+    height: 143px;
+    margin-top: 10px;
+    border-right: 1px solid #fff;
+
+}
+.recom_bd .last{
+    border-right: 0;
+}
+
+.recom_bd img{
+    padding-left: 10px;
+}
+
+/* 楼层区 floor开始 */
+.box_hd{
+    height: 30px;
+    border-bottom: 2px solid #c81623 ;
+    margin-top: 10px;
+}
+.box_hd h3{
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    color: #c81623;
+}
+.box_hd_list{
+    float: right;
+    line-height: 30px;
+    padding-right: 10px;
+}
+.box_hd li{
+    float: left;
+}
+
+.box_hd_spacer{
+    float: right;
+    width: 1px;
+    height: 13px;
+     /* 设置外边距撑开 */ 
+    margin: 9px 15px 0; /*上 左右 下*/
+    background-color: #9d9d9d;
+}
+/* box_bd开始 */
+.box_bd{
+    height: 360px;
+    overflow: hidden;
+}
+/* 为图片添加过渡效果 */
+.box_bd .tab_list img{
+    transition: all 0.6s ease 0s;
+}
+
+.box_bd .tab_list img:hover{
+    margin-left: 15px;
+}
+
+.w209{
+    width: 209px;
+    background-color: #f9f9f9;
+}
+.w209_a img{
+    margin-left: 12px;
+    margin-top: 15px;
+}
+ .w209 .tab_list_w209 li{
+    width: 85px;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.w329{
+    width: 329px;
+}
+.w219{
+    width: 219px;
+    border-right:1px solid #ccc;
+}
+.w220{
+    width: 220px;
+    border-right:1px solid #ccc;
+}
+
+.tab_list li{
+    float: left;
+    height: 360px;
+}
+
+.tab_list_spacer{
+    border-bottom: 1px solid #ccc;    
+}
+
+/* 侧边栏 fixedtool */
+.fixedtool{
+    position: fixed;
+    top: 200px;
+    /* 垂直居中定位 */
+    left: 50%;
+    margin-left: -681px;
+    width: 66px;
+}
+
+.fixedtool li{
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.fixedtool_jia{
+    background-color: #c81623;
+    color: #fff;
+
+}

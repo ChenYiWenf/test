@@ -1,0 +1,435 @@
+/*公用样式*/
+/*顶部导航栏大盒子样式*/
+.shortcat{
+	
+	/*设置行高和高度*/
+	line-height: 31px;
+	height: 31px;
+	background-color: #f1f1f1;
+	
+}
+/* 所有li标签左浮动 */
+.shortcat li{
+    float: left;
+
+}
+
+ /*声明字体图标*/
+ @font-face {
+    /*注意字体名字  icomoon*/
+font-family: 'icomoon';
+/*注意字体路径*/
+src: url('../fonts/icomoon.eot?7kkyc2');
+src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+font-size: normal;
+font-style: normal;
+}
+/* 调用字体图标 */
+.icomoon{
+    font-family: 'icomoon';
+    /* font-size: 16px; */
+    /* 行高 i为行内元素不可设置高度 高度它继承它的父元素 31px*/
+    line-height: 28px;
+}
+
+
+
+/*版心盒子样式*/
+.innerdiv{
+	/*设置宽度*/
+	width: 1200px;
+	/*盒子居中*/
+	margin: 0 auto;
+	
+}
+
+/* 顶部导航栏左浮动 */
+.fl {
+    float: left;
+
+}
+/* 顶部导航栏右浮动 */
+.fr{
+    float: right;
+
+}
+
+/* 部分字体显示红色 */
+.style-red{
+    color: #c81623;
+
+}
+/* 模拟分隔符样式 */
+.spacer{
+    width: 1px;    
+    height: 12px;
+    background-color: #666666;
+    /* 设置外边距撑开 */
+    margin: 9px 15px 0; /*上 左右 下*/
+
+
+}
+/* 设置header */
+.header{
+    /* 开启相对定位 */
+    position: relative;
+
+    height: 106px ;
+   
+
+}
+/* logo图标参数 */
+.logo{
+    /* 开启绝对定位 */
+    position: absolute;
+    top: 27px;
+    left: 0;
+    height:  55px;
+    width:175px;
+
+    
+}
+
+/* logo中的链接 */
+.logo a{
+    /* a为行内元素 要变为块元素 */
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 55px;
+    background:url(../img/logo.png);
+    /* 让a标签中的文字隐藏字体大小设为0 第一种方法 */
+    /* font-size: 0; */
+    /* 第二种方法 用首行缩进 然后溢出剪切 */
+    text-indent: -9999px;
+}
+
+/* search搜索框 */
+.search{
+    /* 开启绝对定位 */
+    position: absolute;
+    left: 348px;
+    top: 27px;
+}
+ /* input标签 */
+ .text{
+     /* 设置宽高 */
+     width: 446px;
+     height: 35px;
+     /* 设置边框 */
+     border: 2px solid #b1191a;
+     /* 设置内边距 */
+     padding-left: 10px; 
+     color: #c1c1c1;
+ }
+.btn{
+    position: absolute;
+    /* 设置宽高 */
+    width: 84px;
+    height: 39px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #f1dfdf;
+    /* 消除默认边框 */
+    border: none;
+
+}
+
+/* hotwords定位 */
+.hotwords{
+    /* 开启绝对定位 */
+    position: absolute;
+    left: 348px;
+    top: 70px;
+
+}
+/* 间隔 */
+.hotwords a{
+    /* 设置外边距 */
+    margin: 0 11px;
+
+}
+/* shopcar盒子定位 */
+.shopcar{
+    /* 开启绝对定位 */
+    position: absolute;
+    top: 27px;
+    left: 997px;
+
+    width: 140px;
+    height: 35px;
+    /* 设置行高 行高与盒子高度一样文字会垂直居中 */
+    line-height: 35px;
+    text-align: center;
+    background-color:#f7f7f7 ;
+    /* 边框 */
+    border: 2px solid #dfdfdf;
+}
+
+
+/* 调用字体图标 */
+.car{
+    font-family: 'icomoon' ;
+    color:#dc6161;
+ 
+}
+.arrow{
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+
+/* count盒子 */
+.count{
+    /* 开启绝对定位 */
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    background-color: #e60012;
+    padding: 0 5px;
+    height: 13px;
+    line-height: 13px;
+    /* 设置圆角边框 */
+    border-radius: 7px 7px 7px 0; /*四个参数时 左上 右上 右下 左下*/
+}
+/* nav开始 */
+/* nav 下边框*/
+.nav{
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+
+}
+.dropdown{
+    width: 209px;
+
+}
+
+/* dt全部分类框 */
+.dt{
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b1191a;
+
+}
+ /* dd 下拉框 */
+ .dd{
+    height: 466px;
+    background-color:#c81623;
+    margin-top: 1px;
+
+ }
+
+ /* 调用字体符号 */
+ .arrow1{
+    font-family: 'icomoon';
+    /* 字体符号颜色 */
+    color: #fff;
+
+ }
+ /* 设置字体符号定位 */
+ .arrow1{
+     /* 开启绝对定位 */
+    position: absolute;
+    right: 10px;
+ }
+ /* 设置li间距 */
+ .align {
+     /* 开启相对定位 */
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 1px;
+    /* 盒子没有宽度 padding不会撑开盒子 */
+    padding-left: 10px;
+
+ }
+ /* 添加过渡效果 */
+ .align {
+    transition: all 0.6s ease 0s;
+ }
+ .align:hover{
+     padding-left: 16px;
+     font-size: 18px;
+     font-weight: bold;
+
+ }
+/* a标签字体大小颜色 */
+.align a {
+    font-size: 10px;
+    color: #fff;
+
+}
+
+/* 用hover伪类模拟js鼠标移入事件效果 */
+.align:hover{
+    background-color: #fff;
+
+}
+/* a标签字体颜色 */
+.align:hover a {
+    color: #c81623;
+
+}
+
+/* 右侧导航navitems开始 */
+.navitems li {
+    float: left;
+    /* 垂直居中 */
+    height: 45px;
+    line-height: 45px;
+    padding-left: 52px;
+
+}
+/* 设置a标签样式 */
+.navitems li a {
+    display: block;
+    height: 44px;
+    font-size: 16px;
+    color: #333;
+
+}
+
+/* footer底部 start */
+.footer{
+    width: 100%;
+    height: 418px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+
+}
+
+/* 服务模块  mod_service*/
+.mod_service{
+    height: 79px;
+    border-bottom: 1px solid #ccc;
+}
+.mod_service li{
+    float: left;
+    width: 240px;
+    height: 79px;
+}
+
+/* 重复代码封装 */
+.mod_service_repeat{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+    background:no-repeat url("../img/icons.png");
+
+}
+/* mod_service_zheng 图标 */
+.mod_service_zheng{
+     background-position: -253px -3px;
+
+}
+
+/* 文字样式 */
+.mod_service_tit{
+    float: left;
+    margin-left: 7px;
+}
+.mod_service_tit h5{
+    margin: 5px 0;
+
+}
+
+
+/* mod_service_kuai 图标 */
+.mod_service_kuai{
+    background-position: -253px -54px;
+
+}
+/* mod_service_bao 图标 */
+.mod_service_bao{
+    background-position: -257px -105px ;
+
+}
+ 
+/* mod_service_zhang 图标 */
+.mod_service_zhang{
+    background-position: -257px -155px;
+
+}
+
+/* mod_service_ban 图标 */
+.mod_service_ban{
+    background-position: -257px -208px;
+}
+
+/* mod_help 开始 */
+.mod_help{
+    height: 189px;
+    border-bottom: 1px solid #ccc;
+
+}
+/* 每个dl容器宽度 */
+.mod_help_list{
+    float: left;
+    width: 150px;
+    padding:20px 0 0 50px ; /*上 右 下 左4*/
+}
+
+.mod_help dt {
+    /* 给高撑开盒子 */
+    height: 30px;
+    font-size: 16px;
+}
+.mod_help dd {
+   height: 22px;
+
+}
+
+/* ma 盒子 */
+.mod_help_ma img{
+    margin: 8px 0;
+
+}
+.mod_help_ma dt,
+.mod_help_ma p {
+    margin-left: 15px;
+
+}
+
+/* 页面底部版权信息盒子开始 */
+.mod_copyright{
+    height: 120px;
+}
+/* 浮动 */
+.mod_copyright_item li ,
+.line{
+    float: left;
+
+}
+
+.mod_copyright_item{
+    padding-top: 20px;
+
+}
+
+.mod_copyright_line{
+    height: 16px;
+    margin: 0 100px;
+
+}
+
+.line{
+    margin: 0 14px;
+}
+
+/* info盒子居中 */
+.mod_copyright_info{
+
+ text-align: center;
+
+}
+
+.mod_copyright_info p{
+    margin: 7px 0;
+
+}

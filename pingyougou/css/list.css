@@ -1,0 +1,44 @@
+/* list 手机页面样式 */
+.sk{
+    position: absolute;
+    top: 43px;
+    left: 185px;
+    width: 75px;
+    border-left: 2px solid #b1191a;
+}
+
+.sk img{
+    padding: 4px 0 0 14px;
+}
+
+/* list页面导航  */
+/* 左浮动盒子 sk_list */
+.sk_list li{
+    float: left;
+    /* 垂直居中 */
+    height: 45px;
+    line-height: 45px;
+    margin: 0 29px;
+}
+
+.sk_list li a{
+    font-size: 16px;
+    font-weight: bold;
+    color:#000 ;
+
+}
+
+/* 右导航盒子sk_con */
+.sk_con li{
+    float: left;
+    /* 垂直居中 */
+    height: 45px;
+    line-height: 45px;
+    margin: 0 24px;
+    /* 引入字体图标 */
+    font-family: 'icomoon';
+}
+.sk_con li a{
+    font-size: 14px;
+    color: #a3a3a3;
+}
